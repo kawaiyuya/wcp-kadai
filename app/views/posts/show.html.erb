@@ -1,0 +1,23 @@
+
+ <% if flash[:success] %>
+ <div class="flash">
+ 	<%= flash[:success] %>
+
+ </div>
+ <% end %>
+
+<h1>title</h1>
+<%= @post.title %>
+<h1>body</h1>
+<%= @post.body %>
+
+<span>
+	<%= link_to "edit", edit_post_path(@post.id) %>
+</span>
+<span>
+	<%= link_to "back", posts_path(@post.id),class:"back" %>
+</span>
+
+</span>
+
+
