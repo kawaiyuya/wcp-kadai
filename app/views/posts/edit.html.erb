@@ -20,10 +20,10 @@
     <%= f.text_area,class:book_body %>
     <%= f.submit 'Update Book' %>
 <span>
-	<%= link_to "show", "/posts/#{@post.id}" %>
+	<%= link_to "show", post_path(post.id),class:"show#{post.id}" %>
 </span>
 <span>
-	<%= link_to "back", "/posts" %>
+	<%= link_to "back", posts_path,class:"back"%>
 </span>
 <% end %>
 
